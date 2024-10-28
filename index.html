@@ -20,6 +20,13 @@
     header {
         padding: 1rem; /* Reduce padding for a compact view */
     }
+    
+    .features {
+       display: grid;
+    }
+    .feature{
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -30,10 +37,18 @@
     input[type="text"] {
         width: 80%; /* Adjust search input width for tablets */
     }
+    
+    .features {
+       flex-wrap: wrap;
+    }
 }
 @media (min-width: 992px) {
     .events-container {
         justify-content: space-between; /* Distribute cards evenly */
+    }
+    
+    .features {
+       flex-wrap: wrap;
     }
 }
 </style>
@@ -68,15 +83,16 @@
 
         <section class="features">
             <div class="feature">
-              <a href="https://martin-chichia.github.io/books-and-journals/"><h3>Books & Journals</h3></a>  
-                <p>Access thousands of titles, both physical and digital.</p>
+              <a href="https://martin-chichia.github.io/books-and-journals/" class="btn">Books & Journals</a>  
+                <p>
+                    Access thousands of titles, both physical and digital.</p>
             </div>
             <div class="feature">
-               <a href="https://martin-chichia.github.io/library-membership/"><h3 >Membership</h3></a> 
+               <a href="https://martin-chichia.github.io/library-membership/" class="btn" >Membership</a> 
                 <p>Join the library to borrow items and enjoy other perks.</p>
             </div>
             <div class="feature">
-               <a href="https://martin-chichia.github.io/community-events/"><h3>Community Events</h3></a> 
+               <a href="https://martin-chichia.github.io/community-events/" class="btn">Community Events</a> 
                 <p>Participate in workshops, book clubs, and more.</p>
             </div>
         </section>
