@@ -15,6 +15,7 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     flex-wrap: wrap;
+   z-index: 1000;
 }
 header img{
     width: 150px;
