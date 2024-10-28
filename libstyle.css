@@ -26,6 +26,9 @@ header .logo h1 {
 .linktabs {
     flex-wrap: wrap;
 }
+.linktabs li{
+    color: beige;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -54,11 +57,13 @@ nav a:hover {
 .hero h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: beige;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    color:bisque;
 }
 
  .btn {
