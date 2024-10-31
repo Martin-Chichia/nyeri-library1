@@ -8,7 +8,80 @@
 
 </head>
 <style>
-    @media (max-width: 767px) {
+@media (max-width: 543px){
+    .event-card {
+        width: 100%; /* Cards take full width on mobile */
+    }
+
+    input[type="text"] {
+        width: 90%; /* Search bar is wider on mobile */
+    }
+
+    header {
+        padding: 1rem; /* Reduce padding for a compact view */
+
+    }
+    
+    .features {
+       display: grid;
+       
+    }
+    .feature{
+        width: 100%;
+        height: auto;
+
+    }
+   .hero a{
+    display: none;
+   }
+   .libname{
+    font-size: 7px;
+    color: #232a7c;
+   }
+
+   .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1A237E;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show the links when active */
+    .nav-links.active {
+        display:grid;
+
+    
+    }
+    .sec-one{
+        display: none;
+    }
+    .sec-one.active{
+        display: block;
+        
+    }
+    .linktabs.active{
+        width: 20%;
+
+    }
+
+    /* Display the hamburger icon */
+    .menu-icon {
+        flex-wrap: nowrap;
+    }
+
+   main{
+    margin-top: 150px;
+   }
+   .feature{
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+}
+   @media (min-width: 544px) and (max-width: 767px) {
     .event-card {
         width: 100%; /* Cards take full width on mobile */
     }
@@ -134,8 +207,8 @@
         <div class="linktabs">
              <nav class="nav-links" id="navLinks">
             <ul>
-                <li><a href="https://martin-chichia.github.io/nyeri-library1/">Home</a></li>
-                <li><a href="https://martin-chichia.github.io/library-catalog/">Catalog</a></li>
+                <li><a href="file:///C:/Users/ADMIN/WEB/library/libraryweb1.html">Home</a></li>
+                <li><a href="file:///C:/Users/ADMIN/WEB/library/website/librarycatalog.html">Catalog</a></li>
                 <li><a href="https://martin-chichia.github.io/library-membership/">Membership</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -188,9 +261,9 @@
     <main>
         <section class="sec-one" id="secone">
             <ul>
-                <div><li class="tab"><a href="https://martin-chichia.github.io/nyeri-library1/">Home</a></li></div>
+                <div><li class="tab"><a href="file:///C:/Users/ADMIN/WEB/library/libraryweb1.html">Home</a></li></div>
                 <hr>
-                <div><li class="tab"><a href="https://martin-chichia.github.io/library-catalog/">Catalog</a></li></div>
+                <div><li class="tab"><a href="file:///C:/Users/ADMIN/WEB/library/website/librarycatalog.html">Catalog</a></li></div>
                 <hr>
                 <div><li class="tab"><a href="https://martin-chichia.github.io/library-membership/">Membership</a></li></div>
                 <hr>
