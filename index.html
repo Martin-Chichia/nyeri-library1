@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Home</title>
+    <link rel="stylesheet" href="libstyle.css">
+
+</head>
+<style>
+    @media (max-width: 767px) {
+    .event-card {
+        width: 100%; /* Cards take full width on mobile */
+    }
+
+    input[type="text"] {
+        width: 90%; /* Search bar is wider on mobile */
+    }
+
+    header {
+        padding: 1rem; /* Reduce padding for a compact view */
+
+    }
+    
+    .features {
+       display: grid;
+       
+    }
+    .feature{
+        width: 100%;
+        height: auto;
+
+    }
+   .hero a{
+    display: none;
+   }
+   .libname{
+    font-size: 10px;
+    color: #232a7c;
+   }
+
+   .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1A237E;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show the links when active */
+    .nav-links.active {
+        display:grid;
+
+    
+    }
+    .sec-one{
+        display: none;
+    }
+    .sec-one.active{
+        display: block;
+        
+    }
+    .linktabs.active{
+        width: 20%;
+
+    }
+
+    /* Display the hamburger icon */
+    .menu-icon {
+        flex-wrap: nowrap;
+    }
+
+   main{
+    margin-top: 130px;
+   }
+   .feature{
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .event-card {
+        width: 45%; /* Cards take up 45% width on tablets */
+    }
+
+    input[type="text"] {
+        width: 80%; /* Adjust search input width for tablets */
+    }
+    
+    .features {
+       flex-wrap: wrap;
+    }
+}
+@media (min-width: 992px) {
+    .events-container {
+        justify-content: space-between; /* Distribute cards evenly */
+    }
+    
+    .features {
+       flex-wrap: wrap;
+    }
+    .sec-one{
+        display: none;
+    }
+.menu-icon{
+    display: none;
+}
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.knls.ac.ke/wp-content/uploads/2021/09/knlslogo1.png" alt="description">
+            
+        </div>
+        <div class="libname">
+             <h1>THE NYERI NATIONAL LIBRARY</h1>
+        </div>
+        <button class="menu-icon" id="myButton" onclick="myFunction(this)" onclick="toggleSection()"><div class="container" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="menup"><p>Menu</p></div>
+        </button>
+          <script>
+           
+          </script>
+        
+        <div class="linktabs">
+             <nav class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="file:///C:/Users/ADMIN/WEB/library/libraryweb1.html">Home</a></li>
+                <li><a href="file:///C:/Users/ADMIN/WEB/library/website/librarycatalog.html">Catalog</a></li>
+                <li><a href="https://martin-chichia.github.io/library-membership/">Membership</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <script>
+             function myFunction(x) {
+              x.classList.toggle("change");
+        }
+        </script>
+        <script>
+            // JavaScript to toggle the menu on mobile
+            
+
+            function toggleMenu() {
+                const secone = document.getElementById('secone');
+                secone.classList.toggle('active');
+
+
+            
+      const section = document.getElementById('secone');
+      // Toggle the display property between 'none' and 'block'
+      if (section.style.display === 'none' || section.style.display === '') {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    }
+     const button = document.getElementById('myButton');
+    button.addEventListener('click', () => {
+        toggleMenu();            // Call first function
+        myFunction(x); // Call second function
+        toggleSection();
+    });
+        
+        </script>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scroll effect
+      });
+    });
+    
+      </script>
+    
+        </div>
+       
+    </header>
+<hr>
+    <main>
+        <section class="sec-one" id="secone">
+            <ul>
+                <div><li class="tab"><a href="file:///C:/Users/ADMIN/WEB/library/libraryweb1.html">Home</a></li></div>
+                <hr>
+                <div><li class="tab"><a href="file:///C:/Users/ADMIN/WEB/library/website/librarycatalog.html">Catalog</a></li></div>
+                <hr>
+                <div><li class="tab"><a href="https://martin-chichia.github.io/library-membership/">Membership</a></li></div>
+                <hr>
+                <div><li class="tab"><a href="#">Contact</a></li></div>
+                <hr>
+                
+
+
+                
+            
+            
+            </ul>
+        </section>
+        <section class="hero">
+            <h2>Welcome to the Online Library</h2>
+            <p>Explore a vast collection of books, journals, and media.</p>
+            <a href="https://martin-chichia.github.io/library-catalog/" class="btn">Browse Catalog</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+              <a href="https://martin-chichia.github.io/books-and-journals/" class="btn">Books & Journals</a>  
+                <p>
+                    Access thousands of titles, both physical and digital.
+                    How It Works:
+                    </p>
+            </div>
+            <hr>
+            <div class="feature">
+               <a href="https://martin-chichia.github.io/library-membership/" class="btn" >Membership</a> 
+                <p>Join the library to borrow items and enjoy other perks.
+                    How It Works:
+
+                </p>
+            </div>
+            <hr>
+            <div class="feature">
+               <a href="https://martin-chichia.github.io/community-events/" class="btn">Community Events</a> 
+                <p>Participate in workshops, book clubs, and more.
+                    How It Works:
+                    </p>
+            </div>
+        </section>
+    </main>
+<hr>
+    <footer class="footer">
+        <p>&copy; 2024 Library Portal. All Rights Reserved.</p>
+    </footer>
+   <style>
+ 
+
+   </style>
+</body>
+</html>
